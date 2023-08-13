@@ -145,10 +145,11 @@ const formattedDate = `${month} ${year} ${day}`;
   return (
     <SafeAreaView style={styles.container}>
                 <Header
-        centerComponent={{ text: 'Register/Login', style: { color: '#fff', fontSize: 15, fontWeight: 'bold' } }}
-        leftComponent={
+        // centerComponent={{ text: 'B S U RESULT APP', style: { color: '#fff', fontSize: 15, fontWeight: 'bold' } }}
+        centerComponent={
           <TouchableOpacity onPress={() => navigation.goBack()} style={{ fontWeight: 'bold', fontSize: 22 }}>
-            <Text style={{ color: '#fff', fontSize: 15, fontWeight: 'bold' }}>Welcome</Text>
+            <Entypo name="graduation-cap" size={40} color="#fff"  style={{ marginLeft:30,  }} />
+            <Text style={{ color: '#fff', fontSize: 15, fontWeight: 'bold' }}>B S U RESULT APP</Text>
           </TouchableOpacity>
         }
         rightComponent={
@@ -164,7 +165,7 @@ const formattedDate = `${month} ${year} ${day}`;
       <ImageBackground
         source={require('./../../assets/icon.png')}
         style={styles.backgroundContainer}
-        resizeMode="cover"
+        resizeMode="contain"
       >
         <View style={styles.buttonContainer}>
           <TouchableOpacity
@@ -293,7 +294,7 @@ const formattedDate = `${month} ${year} ${day}`;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor:'#0000FF'
+    backgroundColor:'#FFFFFF'
   },
   backgroundImage: {
     flex: 1,
@@ -352,6 +353,7 @@ const styles = StyleSheet.create({
     flex: 1,
     paddingTop: 100,
     alignItems: 'center',
+    margin: 'auto',
   },
 
   buttonContainer: {
@@ -359,7 +361,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'flex-end',
     marginTop: 'auto',
-    marginBottom: 95,
+    marginBottom: 90,
   },
 
   button: {
