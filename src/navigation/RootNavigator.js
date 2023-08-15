@@ -1,8 +1,7 @@
 import React, {useContext } from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { AuthContext } from './../screens/AuthContext';
-import AppStack from './AppStack';
-import AuthStack from './AuthStack';
+import AppNavigator from './AppNavigator';
 
 
 const RootNavigator = () => {
@@ -11,11 +10,9 @@ const RootNavigator = () => {
 
   return (
     <NavigationContainer>
-        {user ? (
-          <AppStack />
-        ) : (
-          <AuthStack />
-        )}
+       
+          <AppNavigator />
+       
     </NavigationContainer>
   );
 };
