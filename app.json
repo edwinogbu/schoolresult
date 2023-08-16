@@ -1,8 +1,8 @@
 {
   "expo": {
-    "name": "schoolresult",
-    "slug": "schoolresult",
-    "version": "1.0.0",
+    "name": "BSU Result",
+    "slug": "BsuSchoolResult",
+    "version": "2.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -25,10 +25,16 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
       },
-      "package": "com.blessedcoder40.schoolresult"
+      "package": "com.blessedcoder40.BsuSchoolResult",
+      "versionCode": 2
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "f5ae1d93-ab67-44f2-be75-236a8d02f348"
+      }
     }
   }
 }

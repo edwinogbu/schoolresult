@@ -13,14 +13,17 @@ import {
 
 import { Icon, Header } from 'react-native-elements';
 import { Ionicons, Entypo } from '@expo/vector-icons';
+import { AuthContext } from './AuthContext';
+import { CommonActions, DrawerActions } from '@react-navigation/native';
 
 
 
 const StarterScreen = ({ navigation }) => {
-  // const { signIn, signUp, setUser } = useContext(AuthContext);
+  const { state, signIn, signUp } = useContext(AuthContext);
 
   const [signUpModalVisible, setSignUpModalVisible] = useState(false);
   const [signInModalVisible, setSignInModalVisible] = useState(false);
+  const [user, setUser] = useState(state);
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
@@ -30,7 +33,7 @@ const StarterScreen = ({ navigation }) => {
   const [phoneError, setPhoneError] = useState('');
   const [passwordError, setPasswordError] = useState('');
   const animatedValue = new Animated.Value(0);
-
+ 
   useEffect(() => {
     Animated.timing(animatedValue, {
       toValue: 1,
@@ -89,6 +92,7 @@ const StarterScreen = ({ navigation }) => {
     }
   };
 
+
   const handleSignUp = async () => {
     validateName();
     validateEmail();
@@ -97,43 +101,51 @@ const StarterScreen = ({ navigation }) => {
 
     if (nameError === '' && emailError === '' && phoneError === '' && passwordError === '') {
       try {
-
-        // const user = await signUp(name, email, phone, password);
-        console.log(user);
-        // User successfully signed up, setUser to update the user state in context
-        setUser({
-          name,
-          email,
-          phone,
-          password
-        });
+        const user = { name, email, phone, password }; // Create an object with user data
+        await signUp(user); // Dispatch the SIGN_UP action with user data
+        
         setName('');
         setEmail('');
         setPhone('');
         setPassword('');
         setSignUpModalVisible(false);
+        // Navigate to the 'HomeScreen' within the BottomTabNavigator
+        navigation.dispatch(
+          CommonActions.navigate({
+            name: 'App', // Use the exact name as defined in your navigator
+          })
+          );
+          // console.log(user);
+        
       } catch (error) {
         console.log('Sign up error:', error);
       }
     }
   };
 
-  const handleSignIn = () => {
+  
+  const handleSignIn = async () => {
     validateName();
     validatePassword();
-
+  
     if (emailError === '' && passwordError === '') {
-      // signIn(email, password);
-      setEmail('');
-      setPassword('');
-      setSignInModalVisible(false);
-      // console.log("signinng in")
-      navigation.navigate("Home");
+      try {
+        await signIn(email, password);
+        setEmail('');
+        setPassword('');
+        setSignInModalVisible(false);
+  
+        // Navigate to the 'HomeScreen' within the BottomTabNavigator
+        navigation.dispatch(
+          CommonActions.navigate({
+            name: 'App', // Use the exact name as defined in your navigator
+          })
+        );
+      } catch (error) {
+        console.log('Sign in error:', error);
+      }
     }
   };
-
-
-
 const currentDate = new Date();
 const year = currentDate.getFullYear();
 const monthNames = [
@@ -242,6 +254,7 @@ const formattedDate = `${month} ${year} ${day}`;
             <TouchableOpacity
               style={styles.modalButton}
               onPress={handleSignUp}
+              // onPress={()=>{navigation.navigate("App")}}
               activeOpacity={0.7}
             >
               <Text style={styles.buttonText}>Sign Up</Text>
@@ -282,8 +295,8 @@ const formattedDate = `${month} ${year} ${day}`;
             {passwordError !== '' && <Text style={styles.errorText}>{passwordError}</Text>}
             <TouchableOpacity
               style={styles.modalButton}
-              // onPress={handleSignIn}
-              onPress={()=>{navigation.navigate("App")}}
+              onPress={handleSignIn}
+              // onPress={()=>{navigation.navigate("App")}}
               activeOpacity={0.7}
             >
               <Text style={styles.buttonText}>Sign In</Text>

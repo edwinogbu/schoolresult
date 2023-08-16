@@ -60,14 +60,14 @@ const ProfileScreen = () => {
 
   const fetchUserDetails = () => {
     setUserDetails({
-      name: 'John Doe',
-      email: 'john@example.com',
-      phone: '+1234567890',
+      name: 'Test Case',
+      email: 'testcase@gmail.com',
+      phone: '+1238065688038',
     });
     setOriginalUserDetails({
-      name: 'John Doe',
-      email: 'john@example.com',
-      phone: '+1234567890',
+      name: 'Test Case update Here',
+      email: 'updateheretestcase@gmail.com',
+      phone: '+1238065688038',
     });
   };
 
