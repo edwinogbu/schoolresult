@@ -58,9 +58,10 @@ const DrawerContent = (props) => {
               avatarStyle={{
                 ...styles.avatar,
                 borderColor: colors.white,
+                borderRadius:50,
               }}
               size={75}
-              source={require('../../assets/icon.png')}
+              source={require('../../assets/image/placeholder_graduation.jpg')}
             />
             <View style={{ marginLeft: 10 }}>
               <Text
@@ -239,7 +240,7 @@ const styles = StyleSheet.create({
   },
   darkthemeText:{
       fontSize:14,
-      color:colors.grey,
+      color:colors.grey1,
       paddingTop:10,
        paddingLeft:20,
        fontWeight:'bold'

@@ -168,7 +168,7 @@ const HomeScreen = () => {
             <View style={styles.textInputContainer}>
               <TextInput
                 style={styles.textInput}
-                placeholder="E.g Enter bsu/cmp/18/1000 or 001"
+                placeholder="E.g Enter bsu/cmp/19/1000 or 001"
                 onChangeText={handleRegistrationNumberChange}
               />
             </View>
@@ -266,7 +266,8 @@ marginLeft: 8,
 textInput: {
 height: 48,
 borderWidth: 2,
-borderColor: '#00048D',
+// borderColor: '#00048D',
+borderColor: '#205CE5',
 paddingHorizontal: 8,
 borderRadius: 24,
 fontWeight: '900',

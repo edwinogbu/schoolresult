@@ -9,7 +9,8 @@ export const colors = {
     cardbackground:"white",
     statusbar:"#ff8c52",
     headerText:"white",
-    primary:'#000080',
+    primary:'#205CE5',
+    // primary:'#000080',
    
 }
 

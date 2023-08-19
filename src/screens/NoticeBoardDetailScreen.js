@@ -16,6 +16,7 @@ const NoticeBoardDetailScreen = ({ navigation, route }) => {
           </TouchableOpacity>
         }
         backgroundColor="#000080"
+        backgroundColor="#205CE5"
         centerComponent={{ text: 'BSU News Detail', style: styles.headerText }}
       />
       <ScrollView contentContainerStyle={styles.contentContainer}>

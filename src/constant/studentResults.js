@@ -1,7 +1,7 @@
 const studentResults = [
   { 
     registrationNumber: '001', 
-    matricNumber:'bsu/cmp/2019/1000',
+    matricNumber:'bsu/cmp/19/1000',
     department:'computer Science',
     semester: 'First', 
     level: '100', 
@@ -40,7 +40,7 @@ const studentResults = [
   },
   { 
     registrationNumber: '001',
-    matricNumber:'bsu/cmp/2019/1000',
+    matricNumber:'bsu/cmp/19/1000',
     department:'computer Science', 
     semester: 'second', 
     level: '100', 
@@ -81,7 +81,7 @@ const studentResults = [
 
   { 
     registrationNumber: '001', 
-    matricNumber:'bsu/cmp/2019/1000',
+    matricNumber:'bsu/cmp/19/1000',
     department:'computer Science',
     semester: 'First',
     level: '200',  
@@ -121,7 +121,7 @@ const studentResults = [
   },
   { 
     registrationNumber: '001', 
-    matricNumber:'bsu/cmp/2019/1000',
+    matricNumber:'bsu/cmp/19/1000',
     department:'computer Science',
     semester: 'second',
     level: '200',  
@@ -162,7 +162,7 @@ const studentResults = [
   
   { 
     registrationNumber: '001',
-    matricNumber:'bsu/cmp/2019/1000',
+    matricNumber:'bsu/cmp/19/1000',
     department:'computer Science', 
     semester: 'First',
     level: '300',  
@@ -202,7 +202,7 @@ const studentResults = [
   },
   { 
     registrationNumber: '001', 
-    matricNumber:'bsu/cmp/2019/1000',
+    matricNumber:'bsu/cmp/19/1000',
     department:'computer Science',
     semester: 'second',
     level: '300',  
@@ -243,7 +243,7 @@ const studentResults = [
   
   { 
     registrationNumber: '001',
-    matricNumber:'bsu/cmp/2019/1000',
+    matricNumber:'bsu/cmp/19/1000',
     department:'computer Science', 
     semester: 'First',
     level: '400',  
@@ -283,7 +283,7 @@ const studentResults = [
   },
   { 
     registrationNumber: '001', 
-    matricNumber:'bsu/cmp/2019/1000',
+    matricNumber:'bsu/cmp/19/1000',
     department:'computer Science',
     semester: 'second',
     level: '400',  
@@ -324,7 +324,7 @@ const studentResults = [
    // Level 100
    { 
     registrationNumber: '002', 
-    matricNumber: 'bsu/med/2019/1000',
+    matricNumber: 'bsu/med/19/1000',
     department: 'Medical Science',
     semester: 'First', 
     level: '100', 
@@ -361,7 +361,7 @@ const studentResults = [
   },
   { 
     registrationNumber: '002',
-    matricNumber: 'bsu/med/2019/1002',
+    matricNumber: 'bsu/med/19/1002',
     department: 'Medical Science', 
     semester: 'second', 
     level: '100', 
@@ -402,7 +402,7 @@ const studentResults = [
   // Level 200
   { 
     registrationNumber: '002', 
-    matricNumber: 'bsu/med/2019/1002',
+    matricNumber: 'bsu/med/19/1002',
     department: 'Medical Science',
     semester: 'First', 
     level: '200', 
@@ -439,7 +439,7 @@ const studentResults = [
   },
   { 
     registrationNumber: '002',
-    matricNumber: 'bsu/med/2019/1002',
+    matricNumber: 'bsu/med/19/1002',
     department: 'Medical Science', 
     semester: 'second', 
     level: '200', 
@@ -479,7 +479,7 @@ const studentResults = [
  // Level 300
  { 
   registrationNumber: '002', 
-  matricNumber: 'bsu/med/2019/1002',
+  matricNumber: 'bsu/med/19/1002',
   department: 'Medical Science',
   semester: 'First', 
   level: '300', 
@@ -516,7 +516,7 @@ const studentResults = [
 },
 { 
   registrationNumber: '002',
-  matricNumber: 'bsu/med/2019/1002',
+  matricNumber: 'bsu/med/19/1002',
   department: 'Medical Science', 
   semester: 'second', 
   level: '300', 
@@ -555,7 +555,7 @@ const studentResults = [
 // Level 400
 { 
   registrationNumber: '002', 
-  matricNumber: 'bsu/med/2019/1002',
+  matricNumber: 'bsu/med/19/1002',
   department: 'Medical Science',
   semester: 'First', 
   level: '400', 
@@ -592,7 +592,7 @@ const studentResults = [
 },
 { 
   registrationNumber: '002',
-  matricNumber: 'bsu/med/2019/1002',
+  matricNumber: 'bsu/med/19/1002',
   department: 'Medical Science', 
   semester: 'second', 
   level: '400', 
@@ -630,7 +630,7 @@ const studentResults = [
   // Level 100
   { 
     registrationNumber: '003', 
-    matricNumber: 'bsu/masscomm/2019/1003',
+    matricNumber: 'bsu/masscomm/19/1003',
     department: 'Mass Communication',
     semester: 'First', 
     level: '100', 
@@ -667,7 +667,7 @@ const studentResults = [
   },
   { 
     registrationNumber: '003',
-    matricNumber: 'bsu/masscomm/2019/1003',
+    matricNumber: 'bsu/masscomm/19/1003',
     department: 'Mass Communication', 
     semester: 'second', 
     level: '100', 
@@ -706,7 +706,7 @@ const studentResults = [
   // Level 200
   { 
     registrationNumber: '003', 
-    matricNumber: 'bsu/masscomm/2019/1003',
+    matricNumber: 'bsu/masscomm/19/1003',
     department: 'Mass Communication',
     semester: 'First', 
     level: '200', 
@@ -743,7 +743,7 @@ const studentResults = [
   },
   { 
     registrationNumber: '003',
-    matricNumber: 'bsu/masscomm/2019/1003',
+    matricNumber: 'bsu/masscomm/19/1003',
     department: 'Mass Communication', 
     semester: 'second', 
     level: '200', 
@@ -782,7 +782,7 @@ const studentResults = [
   // Level 300
   { 
     registrationNumber: '003', 
-    matricNumber: 'bsu/masscomm/2019/1003',
+    matricNumber: 'bsu/masscomm/19/1003',
     department: 'Mass Communication',
     semester: 'First', 
     level: '300', 
@@ -819,7 +819,7 @@ const studentResults = [
   },
   { 
     registrationNumber: '003',
-    matricNumber: 'bsu/masscomm/2019/1003',
+    matricNumber: 'bsu/masscomm/19/1003',
     department: 'Mass Communication', 
     semester: 'second', 
     level: '300', 
@@ -857,7 +857,7 @@ const studentResults = [
    // Level 400
    { 
     registrationNumber: '003', 
-    matricNumber: 'bsu/masscomm/2019/1003',
+    matricNumber: 'bsu/masscomm/19/1003',
     department: 'Mass Communication',
     semester: 'First', 
     level: '400', 
@@ -894,7 +894,7 @@ const studentResults = [
   },
   { 
     registrationNumber: '003',
-    matricNumber: 'bsu/masscomm/2019/1003',
+    matricNumber: 'bsu/masscomm/19/1003',
     department: 'Mass Communication', 
     semester: 'second', 
     level: '400', 

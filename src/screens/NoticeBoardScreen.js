@@ -73,7 +73,7 @@ const NoticeBoardScreen = ({ navigation }) => {
   return (
     <View style={styles.container}>
       <View style={styles.filterContainer}>
-        <MaterialIcons name="search" size={24} color="black" style={styles.filterIcon} />
+        <MaterialIcons name="search" size={35} color="white" style={styles.filterIcon} />
         <TextInput
           style={styles.filterInput}
           placeholder="Search by title..."
@@ -103,7 +103,8 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     marginBottom: 16,
-    backgroundColor:'#000080'
+    // backgroundColor:'#000080',
+    backgroundColor:'#205CE5'
   },
   filterIcon: {
     margin: 10,
@@ -111,7 +112,7 @@ const styles = StyleSheet.create({
   filterInput: {
     flex: 1,
     borderWidth: 2,
-    borderColor: '#ECECEC',
+    borderColor: '#205CE5',
     borderRadius: 10,
     paddingVertical: 10,
     paddingHorizontal: 12,

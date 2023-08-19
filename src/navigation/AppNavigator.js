@@ -357,7 +357,7 @@ function BottomTabNavigator() {
             iconName = 'account';
             return <MaterialCommunityIcons name={iconName} size={40} color={focused ? '#000080' : '#C0A2C0'} />;
           
-          }else if (route.name === 'Notice') {
+          }else if (route.name === 'News') {
             iconName = 'newspaper';
             return <MaterialCommunityIcons name={iconName} size={40} color={focused ? '#000080' : '#C0A2C0'} />;
           
@@ -365,7 +365,8 @@ function BottomTabNavigator() {
         },
         tabBarStyle: {
           backgroundColor: '#ECECEC',
-          borderColor:'#000080',
+          borderColor:'#205CE5',
+          // borderColor:'#000080',
           borderWidth:5,
           borderTopWidth:5,
           height: 60,
@@ -421,7 +422,7 @@ function BottomTabNavigator() {
                   ),
             }}
       />
-      <Tab.Screen name="Notice" component={NoticeBoardScreen} 
+      <Tab.Screen name="News" component={NoticeBoardScreen} 
           options = {{ 
                     headerShown:false, 
                     drawerIcon: ({ color, size }) => (
@@ -487,7 +488,7 @@ function DrawerNavigator(){
       }}
     />
       <Drawer.Screen
-      name="Notice"
+      name="News"
       component={NoticeBoardScreen}
       options={{
         drawerIcon: ({ color, size }) => (
