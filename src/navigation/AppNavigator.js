@@ -554,7 +554,7 @@ export default function AppNavigator() {
     headerRight: () => (
       <TouchableOpacity onPress={() => {}}>
         <Image
-          source={require('../../assets/icon.png')}
+          source={require('../../assets/image/favicon-48x48.png')}
           style={styles.logo}
           resizeMode="contain"
         />
@@ -590,7 +590,7 @@ export default function AppNavigator() {
     headerRight: () => (
       <TouchableOpacity onPress={() => {}}>
         <Image
-          source={require('../../assets/icon.png')}
+          source={require('./../../assets/image/favicon-48x48.png')}
           style={styles.logo}
           resizeMode="contain"
         />

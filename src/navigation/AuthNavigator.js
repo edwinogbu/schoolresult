@@ -1,12 +1,19 @@
 import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
 import StarterScreen from './../screens/StarterScreen';
+import SplashScreen from './../screens/Splash';
 
 const Stack = createStackNavigator();
 
 const AuthNavigator = () => {
   return (
     <Stack.Navigator>
+     <Stack.Screen name="SplashScreen" component={SplashScreen}
+           options = {{ 
+                    headerShown:false, 
+                    // ...TransitionPresets.RevealFromBottomAndroid 
+            }}
+         />
       <Stack.Screen
         name="Starter"
         options={{ headerShown: false }}

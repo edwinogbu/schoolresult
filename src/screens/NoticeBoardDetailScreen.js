@@ -15,7 +15,7 @@ const NoticeBoardDetailScreen = ({ navigation, route }) => {
             <Text style={{ color: '#fff', marginLeft: 20 }}>Back</Text>
           </TouchableOpacity>
         }
-        backgroundColor="#000080"
+        // backgroundColor="#000080"
         backgroundColor="#205CE5"
         centerComponent={{ text: 'BSU News Detail', style: styles.headerText }}
       />

@@ -2,7 +2,7 @@
   "expo": {
     "name": "BSU Result2",
     "slug": "BsuSchoolResult",
-    "version": "2.1.0",
+    "version": "3.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -26,11 +26,10 @@
         "backgroundColor": "#FFFFFF"
       },
       "package": "com.blessedcoder40.BsuSchoolResult",
-      "versionCode": 2.1
+      "versionCode": 3
     },
     "web": {
       "favicon": "./assets/favicon.png"
     }
-
   }
 }

@@ -607,6 +607,12 @@ const formattedDate = `${month} ${year} ${day}`;
           <View style={styles.slide}>
             <Image source={require('./../../assets/icon.png')} style={styles.slideImage} />
           </View>
+          <View style={styles.slide}>
+            <Image source={require('./../../assets/image/2016_graduation_of_medical_students2.jpg')} style={styles.slideImage} />
+          </View>
+          <View style={styles.slide}>
+            <Image source={require('./../../assets/image/bsu_gate-real.jpg')} style={styles.slideImage} />
+          </View>
         </Swiper>
       </View>
 
